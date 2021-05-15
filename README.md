@@ -1,7 +1,7 @@
 # Stripstring
 Tool to strip specfic strings from the header (first 1000 bytes) of files given an input. I wrote this to rid PCAP files of metadata.
 
-#Syntax: stripstring <filename> "Case sensitive string" <replacement ascii code> <starting offset/position>
+Syntax: stripstring <filename> "Case sensitive string" <replacement ascii code> <starting offset/position>
   
 If you want to remove the Operating system info (in my case "64-bit Windows 10 (2009), build 19042") from a .PCAP file, you would use:
 
@@ -15,5 +15,5 @@ Stripstring.exe t.pcap "64-bit " 120 300
 
 The filename specified will be overwritten, so it's up to you to keep backups if you screw something up.
 
-source: #Stripstring.vb
-binary: #Stripstring.vb
+source: Stripstring.vb
+binary: Stripstring.zip
